@@ -30,7 +30,7 @@ const Header = () => {
       height: 0,
       transition: {
         duration: 0.3,
-        ease: [0.22, 1, 0.36, 1]
+        ease: "easeInOut"
       }
     },
     open: {
@@ -38,7 +38,7 @@ const Header = () => {
       height: "auto",
       transition: {
         duration: 0.3,
-        ease: [0.22, 1, 0.36, 1]
+        ease: "easeInOut"
       }
     }
   };
@@ -83,7 +83,7 @@ const Header = () => {
                   className="text-gray-700 hover:text-blue-900 px-3 py-2 text-sm font-medium transition-all duration-300 relative group"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 + 0.2 }}
+                  transition={{ delay: index * 0.1 + 0.2, ease: [0.22, 1, 0.36, 1] }}
                   whileHover={{ y: -2 }}
                 >
                   {item.name}
@@ -102,7 +102,7 @@ const Header = () => {
             className="hidden md:block"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -170,7 +170,7 @@ const Header = () => {
                     variants={itemVariants}
                     initial="closed"
                     animate="open"
-                    transition={{ delay: index * 0.1 }}
+                    transition={{ delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
                     whileHover={{ x: 10 }}
                   >
                     {item.name}
@@ -181,7 +181,7 @@ const Header = () => {
                   variants={itemVariants}
                   initial="closed"
                   animate="open"
-                  transition={{ delay: navItems.length * 0.1 }}
+                  transition={{ delay: navItems.length * 0.1, ease: [0.22, 1, 0.36, 1] }}
                 >
                   <motion.div
                     whileHover={{ scale: 1.02 }}

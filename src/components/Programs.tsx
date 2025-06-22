@@ -79,7 +79,7 @@ const Programs = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: [0.22, 1, 0.36, 1]
+        ease: "easeOut"
       }
     }
   };
@@ -112,7 +112,7 @@ const Programs = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.div 
             className="inline-block px-6 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-600 rounded-full text-sm font-medium mb-4"
@@ -210,7 +210,7 @@ const Programs = () => {
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
                           viewport={{ once: true }}
-                          transition={{ delay: index * 0.1 + idx * 0.05 }}
+                          transition={{ delay: index * 0.1 + idx * 0.05, ease: [0.22, 1, 0.36, 1] }}
                           whileHover={{ x: 5 }}
                         >
                           <motion.span 
@@ -249,7 +249,7 @@ const Programs = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.div 
             className="bg-gradient-to-r from-blue-900 to-purple-900 rounded-2xl p-8 text-white"
