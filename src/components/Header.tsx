@@ -30,7 +30,7 @@ const Header = () => {
       height: 0,
       transition: {
         duration: 0.3,
-        ease: "easeInOut"
+        ease: [0.22, 1, 0.36, 1]
       }
     },
     open: {
@@ -38,7 +38,7 @@ const Header = () => {
       height: "auto",
       transition: {
         duration: 0.3,
-        ease: "easeInOut"
+        ease: [0.22, 1, 0.36, 1]
       }
     }
   };
@@ -57,7 +57,7 @@ const Header = () => {
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
