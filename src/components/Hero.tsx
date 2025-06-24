@@ -21,8 +21,7 @@ const Hero = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
-        ease: "easeOut"
+        duration: 0.8
       }
     }
   };
@@ -32,8 +31,7 @@ const Hero = () => {
       y: [0, -20, 0],
       transition: {
         duration: 3,
-        repeat: Infinity,
-        ease: "easeInOut"
+        repeat: Infinity
       }
     }
   };
@@ -49,7 +47,7 @@ const Hero = () => {
             x: [0, 20, 0],
             scale: [1, 1.1, 1]
           }}
-          transition={{ duration: 8, repeat: Infinity, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div 
           className="absolute top-40 right-10 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20"
@@ -58,7 +56,7 @@ const Hero = () => {
             x: [0, -25, 0],
             scale: [1, 0.9, 1]
           }}
-          transition={{ duration: 10, repeat: Infinity, ease: [0.22, 1, 0.36, 1], delay: 2 }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         />
         <motion.div 
           className="absolute bottom-20 left-1/2 w-80 h-80 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20"
@@ -67,7 +65,7 @@ const Hero = () => {
             x: [0, 30, 0],
             scale: [1, 1.2, 1]
           }}
-          transition={{ duration: 12, repeat: Infinity, ease: [0.22, 1, 0.36, 1], delay: 4 }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 4 }}
         />
       </div>
       

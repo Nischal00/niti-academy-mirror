@@ -29,16 +29,14 @@ const Header = () => {
       opacity: 0,
       height: 0,
       transition: {
-        duration: 0.3,
-        ease: "easeInOut"
+        duration: 0.3
       }
     },
     open: {
       opacity: 1,
       height: "auto",
       transition: {
-        duration: 0.3,
-        ease: "easeInOut"
+        duration: 0.3
       }
     }
   };
@@ -57,7 +55,7 @@ const Header = () => {
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -83,7 +81,7 @@ const Header = () => {
                   className="text-gray-700 hover:text-blue-900 px-3 py-2 text-sm font-medium transition-all duration-300 relative group"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 + 0.2, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ delay: index * 0.1 + 0.2, ease: "easeOut" }}
                   whileHover={{ y: -2 }}
                 >
                   {item.name}
@@ -102,7 +100,7 @@ const Header = () => {
             className="hidden md:block"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ delay: 0.4, ease: "easeOut" }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -170,7 +168,7 @@ const Header = () => {
                     variants={itemVariants}
                     initial="closed"
                     animate="open"
-                    transition={{ delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                    transition={{ delay: index * 0.1, ease: "easeOut" }}
                     whileHover={{ x: 10 }}
                   >
                     {item.name}
@@ -181,7 +179,7 @@ const Header = () => {
                   variants={itemVariants}
                   initial="closed"
                   animate="open"
-                  transition={{ delay: navItems.length * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ delay: navItems.length * 0.1, ease: "easeOut" }}
                 >
                   <motion.div
                     whileHover={{ scale: 1.02 }}
