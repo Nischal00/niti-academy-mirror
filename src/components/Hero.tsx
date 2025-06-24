@@ -105,13 +105,13 @@ const Hero = () => {
             className="text-5xl md:text-7xl font-bold mb-8 leading-tight"
             variants={itemVariants}
           >
-            Excellence in
+            Best IT courses for
             <motion.span 
               className="block bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-200 bg-clip-text text-transparent"
               animate={{ backgroundPosition: ["0%", "100%", "0%"] }}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              Education
+              Beginners...
             </motion.span>
           </motion.h1>
           
@@ -119,8 +119,7 @@ const Hero = () => {
             className="text-xl md:text-2xl mb-12 text-blue-100 max-w-3xl mx-auto leading-relaxed"
             variants={itemVariants}
           >
-            Empowering students with quality education and innovative learning experiences 
-            to shape tomorrow's leaders and create a brighter future
+            NITI Academy is your ultimate destination to proceed into tech world. We offer beginner to advance courses designed to build strong foundations in the tech field.
           </motion.p>
           
           <motion.div 
@@ -132,7 +131,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 text-black font-semibold px-8 py-4 text-lg shadow-2xl hover:shadow-yellow-400/25">
-                Explore Programs
+                Explore Courses
                 <motion.div
                   animate={{ x: [0, 5, 0] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
@@ -146,22 +145,19 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 text-lg backdrop-blur-sm bg-white/10">
-                <Play className="mr-2" size={20} />
-                Virtual Tour
+                Get Started
               </Button>
             </motion.div>
           </motion.div>
           
           {/* Stats section */}
           <motion.div 
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16"
+            className="grid grid-cols-2 md:grid-cols-2 gap-8 mt-16"
             variants={containerVariants}
           >
             {[
-              { number: "15+", label: "Years Experience" },
-              { number: "5000+", label: "Students" },
-              { number: "95%", label: "Success Rate" },
-              { number: "50+", label: "Expert Faculty" }
+              { number: "5000+", label: "Learners Trained" },
+              { number: "24/7", label: "Support Available" }
             ].map((stat, index) => (
               <motion.div 
                 key={index}
